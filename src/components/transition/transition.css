@@ -1,0 +1,76 @@
+.transition {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-bg);
+  z-index: 1000;
+  animation-name: transitionAnimation;
+  animation-duration: 2s;
+}
+
+@keyframes transitionAnimation {
+  0% {
+    top: 0;
+  }
+  80% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .transition {
+    padding-left: 0;
+    padding-bottom: 60px;
+    height: 100vh;
+  }
+}
+
+.transition__text {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  background-image: linear-gradient(
+    var(--color-primary) 0%,
+    var(--color-primary) 5%,
+    transparent 5%,
+    transparent 95%,
+    var(--color-primary) 95%,
+    var(--color-primary) 100%
+  );
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  animation: textAnimation 1.8s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    top: -100%;
+    background-size: 0% 100%;
+  }
+  20% {
+    top: 50%;
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+    top: 50%;
+  }
+}
