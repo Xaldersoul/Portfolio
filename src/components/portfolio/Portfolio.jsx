@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/food_proyect.png";
+import IMG1 from "../../assets/food2.jpg";
 import PortfolioItem from "./PortfolioItem";
 
 const Portfolio = () => {

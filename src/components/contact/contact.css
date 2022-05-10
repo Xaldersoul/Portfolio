@@ -73,7 +73,7 @@ textarea:-webkit-autofill:focus {
 }
 
 /* MEDIAQUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1450px) {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
