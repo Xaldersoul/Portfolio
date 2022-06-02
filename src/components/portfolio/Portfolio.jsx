@@ -10,10 +10,11 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <PortfolioItem title="Food proyect" image={IMG1} />
-        <PortfolioItem title="Food proyect" image={IMG1} />
-        <PortfolioItem title="Food proyect" image={IMG1} />
-        <PortfolioItem title="Food proyect" image={IMG1} />
+        <PortfolioItem
+          title="Food proyect"
+          image={IMG1}
+          github="https://github.com/Xaldersoul/Food-app"
+        />
       </div>
     </section>
   );

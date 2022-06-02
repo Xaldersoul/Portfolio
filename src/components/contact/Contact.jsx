@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
@@ -29,10 +29,6 @@ const Contact = () => {
     e.target.reset();
   };
 
-  useEffect(() => {
-    console.log(process.env);
-  }, []);
-
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -56,7 +52,7 @@ const Contact = () => {
           />
           <ContactCard
             title="Discord"
-            subtitle="Xalder"
+            subtitle="Xalder#6861"
             icon={<FaDiscord className="contact__icon" />}
             href="https://discord.com/users/Xalder#6861"
             hrefText="Check my discord!"

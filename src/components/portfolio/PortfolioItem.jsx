@@ -1,6 +1,6 @@
 import React from "react";
 
-const PortfolioItem = ({ title, image }) => {
+const PortfolioItem = ({ title, image, github, deploy }) => {
   return (
     <article className="portfolio__item">
       <div className="portfolio__item-img">
@@ -8,22 +8,19 @@ const PortfolioItem = ({ title, image }) => {
       </div>
       <h3>{title}</h3>
       <div className="portfolio__item-cta">
-        <a
-          href="https://github.com/Xaldersoul/Food-app"
-          target="_blank"
-          rel="noreferrer"
-          className="btn"
-        >
+        <a href={github} target="_blank" rel="noreferrer" className="btn">
           Github
         </a>
-        <a
-          href="https://github.com/Xaldersoul/Food-app"
-          target="_blank"
-          rel="noreferrer"
-          className="btn btn-primary"
-        >
-          Demo
-        </a>
+        {deploy && (
+          <a
+            href={deploy}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-primary"
+          >
+            Demo
+          </a>
+        )}
       </div>
     </article>
   );

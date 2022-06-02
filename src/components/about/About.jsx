@@ -1,5 +1,5 @@
 import React from "react";
-import ME from "../../assets/my_photo.jpg";
+import ME from "../../assets/Isaac.png";
 import { FaAward, FaFolderOpen } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import "./about.css";
@@ -23,16 +23,19 @@ const About = () => {
               icon={<FaAward className="about__icon" />}
               title="Experience"
               text="1+ Year"
+              link="experience"
             />
             <AboutCard
               icon={<SiJavascript className="about__icon" />}
               title="Technologies"
               text="knowledge in 10+ technologies"
+              link="experience"
             />
             <AboutCard
               icon={<FaFolderOpen className="about__icon" />}
               title="Proyects"
               text="10+ Proyects"
+              link="portfolio"
             />
           </div>
           <p>
@@ -50,8 +53,13 @@ const About = () => {
               HTML, CSS, Node.js, MongoDB, Firebase.
             </strong>
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Let's talk!
+          <a
+            href="https://certificates.soyhenry.com/cert?id=e2515d31-60f0-4a17-81c1-1cc315d6d7e1"
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+          >
+            View certificate!
           </a>
         </div>
       </div>

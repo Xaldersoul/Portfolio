@@ -1,12 +1,12 @@
 import React from "react";
 
-const AboutCard = ({ icon, title, text }) => {
+const AboutCard = ({ icon, title, text, link }) => {
   return (
-    <article className="about__card">
+    <a href={"#" + link} className="about__card">
       {icon}
       <h5>{title}</h5>
       <small>{text}</small>
-    </article>
+    </a>
   );
 };
 

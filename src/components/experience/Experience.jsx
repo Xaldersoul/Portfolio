@@ -104,6 +104,16 @@ const Experience = () => {
               tech="Firebase"
               level="Intermediate"
             />
+            <ExperienceTech
+              icon={<BsPatchCheckFill className="experience__detail-icon" />}
+              tech="PHP"
+              level="Basic"
+            />
+            <ExperienceTech
+              icon={<BsPatchCheckFill className="experience__detail-icon" />}
+              tech="Laravel"
+              level="Basic"
+            />
           </div>
         </div>
       </div>
